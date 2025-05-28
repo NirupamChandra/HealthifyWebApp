@@ -1,0 +1,6 @@
+numpy >= 1.26.4
+pandas >= 2.2.2
+matmatplotlib >= 3.9.2
+seaborn
+scikit-learn == 1.5.1
+plotly == 6.1.1

@@ -1,0 +1,49 @@
+[data-testid="stDecoration"] {
+  visibility: hidden;
+}
+
+[data-testid="stHeader"] {
+  margin: 0px;
+  padding: 0px;
+  background: rgba(0, 0, 0, 0);
+}
+
+[data-testid="stSidebarContent"] {
+  background: #ad5389; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #3c1053,
+    #ad5389,
+    #86496d
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #3c1053,
+    #ad5389,
+    #86496d
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+[data-testid="stAppViewContainer"] {
+  background: #ad5389; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #3c1053,
+    #86496d,
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #3c1053,
+    #86496d
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+[data-testid="stForm"]{
+
+  background: rgba( 255, 255, 255, 0.15 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+-webkit-backdrop-filter: blur( 1.5px );
+backdrop-filter: blur( 1.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
