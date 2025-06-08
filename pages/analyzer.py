@@ -33,11 +33,14 @@ def calcResult():   #linking model with frontend!!!
 
     prod, mood, stress = sleep_model.predict(X_input)[0]
 
-    sst.productivity = round(prod, 2)/10*100       #in percentage
-    sst.mood = int(round(mood, 0))              #in integer
-    sst.stress = int(round(stress, 0))          #rounded to 0 decimal plac
-    # print(sst.productivity, sst.mood, sst.stress)
-    # print(sleep_model.feature_names_in_)
+    prod = round(prod, 2)/10*100       #in percentage
+    mood = int(round(mood, 0))              #in integer
+    stress = int(round(stress, 0))          #rounded to 0 decimal plac
+
+    #clamping the range so that it doesnot exceed the limit...
+    sst.productivity = max(0, min(prod, 100))
+    sst.mood = max(0, min(mood, 10))
+    sst.stress = max(0, min(stress, 10))
     
     
 st.title(':green[SleepSense] -- Analyze & :blue[Optimize] Your Rest⚡')
